@@ -1,0 +1,44 @@
+resume :
+  general :
+    name    : John Doe
+    title   : Title
+    aboutMe : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    
+  educations :
+    - name    : my diploma
+      place   : My university
+      from    : 2002-12-14
+      to      : 2002-12-15
+      address : 10 backer street, london, UK
+      desc    : Lorem ipsum dolor
+    
+    - name    : my diploma 2
+      place   : My university 2
+      from    : 2002-01-14
+      to      : 2002-03-15
+      address : 11 backer street, london, UK
+      desc    : Lorem ipsum dolor
+
+  experiences :
+    - name    : my experience
+      place   : My company
+      from    : 2004-12-14
+      to      : 2005-12-15
+      address : 10 backer street, london, UK
+      desc    : Lorem ipsum dolor
+
+    - name    : my experience 2
+      place   : My company
+      from    : 2004-12-14
+      to      : 2005-12-15
+      address : 10 backer street, london, UK
+      desc    : Lorem ipsum dolor
+
+  misc :
+    hobbies   : ['fitness', 'bike']
+
+  traduction : 
+    educations  : Educations
+    experiences : Experiences
+    aboutMe     : About Me
+    today       : Today

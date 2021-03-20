@@ -1,0 +1,19 @@
+<div class="row justify-content-md-end mt-5">
+    <div class="col-12 col-md-10 pb-4">
+        <h2>{{ traduction?.educations }}</h2>
+    </div>
+</div>
+<div class="row" *ngFor="let education of educations">
+    <div class="col-2 border-end text-end pb-3">
+        <div class="position-relative h-100 pt-1">
+            {{ education.to }}
+            <div class="position-absolute fixed-bottom">{{ education.from }} </div>
+        </div>
+    </div>
+    <div class="col-10 pb-3">
+        <h4>{{ education.name }}</h4>
+        <h5>{{ education.place }}<h6>{{ education.address }}</h6></h5>
+        
+        <p class="m-0">{{ education.desc }}</p>
+    </div>
+</div>

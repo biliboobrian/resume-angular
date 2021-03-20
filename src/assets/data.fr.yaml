@@ -1,0 +1,44 @@
+resume :
+  general :
+    name    : Pierre HANAUER
+    title   : Expert Technique frontend
+    aboutMe : Consultant IT avec 14 ans d’expérience, spécialisé en développement applications Angular, d'API PHP Lumen, d’ERP/CRM , création d’applications mobiles Android, programmation orientée objet, Design Pattern, MVC architecture, Web services.
+    
+  educations :
+    - name    : my diploma
+      place   : My university
+      from    : 2002-12-14
+      to      : 2002-12-15
+      address : 10 backer street, london, UK
+      desc    : Lorem ipsum dolor
+    
+    - name    : my diploma 2
+      place   : My university 2
+      from    : 2002-01-14
+      to      : 2002-03-15
+      address : 11 backer street, london, UK
+      desc    : Lorem ipsum dolor
+
+  experiences :
+    - name    : Expert Technique
+      place   : ITS4U 
+      from    : Jan 2013
+      to      : Aujourd'hui
+      address : 136 route de Bettembourg, Fentange, 5811, LU
+      desc    : "Développement d'applications angulaJS et angular Développement d'API en PHP (Laravel / Lumen) Configuration de serveur web sous linux RHEL Intégration, développement et administration de solutions CRM (SugarCRM, Edeal) pour différents clients"
+
+    - name    : my experience 2
+      place   : My company
+      from    : 2004-12-14
+      to      : 2005-12-15
+      address : 10 backer street, london, UK
+      desc    : Lorem ipsum dolor
+
+  misc :
+    hobbies   : ['fitness', 'bike']
+
+  traduction : 
+    educations  : Educations
+    experiences : Experiences
+    aboutMe     : A propos
+    today       : Aujourd'hui

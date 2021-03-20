@@ -1,0 +1,7 @@
+config :
+  version         : 1.0.0
+  backgroundColor : '#3b3b3b'
+  headerColor     : '#292929'
+  headerLineColor : '#ff9124'
+  color           : '#ededed'
+  langs           : [en, fr]
