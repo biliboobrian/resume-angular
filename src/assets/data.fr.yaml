@@ -22,8 +22,8 @@ resume :
   experiences :
     - name    : Expert Technique
       place   : ITS4U 
-      from    : Jan 2013
-      to      : Aujourd'hui
+      from    : 2013-01-01
+      to      : 
       address : 136 route de Bettembourg, Fentange, 5811, LU
       desc    : "Développement d'applications angulaJS et angular Développement d'API en PHP (Laravel / Lumen) Configuration de serveur web sous linux RHEL Intégration, développement et administration de solutions CRM (SugarCRM, Edeal) pour différents clients"
 
@@ -42,3 +42,4 @@ resume :
     experiences : Experiences
     aboutMe     : A propos
     today       : Aujourd'hui
+    dateFormat  : dd/MM/yyyy

@@ -1,17 +1,20 @@
 <div class="row">
-    <div class="col-12 text-center text-sm-end">
+    <div class="col-12 text-center text-md-end">
 
         <button *ngFor="let lang of config?.langs!" 
         type="button" class="btn btn-link" 
         [class.active]="langService.isCurrentLang(lang)"
         (click)="onChangeLang(lang)"
-        [style.color]="config?.color">{{ lang }}</button>
+        [style.color]="config?.linkColor">{{ lang }}</button>
       </div>
-    <div class="col-12 text-center text-sm-start">
-        <h2 class="d-block d-sm-none">{{ general?.name }}</h2>
-        <h4 class="d-block d-sm-none">{{ general?.title }}</h4>
+    <div class="col-12 text-center text-md-start">
+        <h2 class="d-block d-md-none">{{ general?.name }}</h2>
+        <h4 class="d-block d-md-none">{{ general?.title }}</h4>
         <img src="./assets/photo.jpg" class="photo"/>
-        <div class="d-none d-sm-inline-block align-bottom">
+        <div class="d-none d-md-inline-block align-bottom">
+            <div>
+                
+            </div>
             <h1 class="ps-3">{{ general?.name }}</h1>
             <h3 class="ps-3">{{ general?.title }}</h3>
         </div>

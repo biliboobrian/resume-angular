@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Education } from '@models/education';
 import { Traduction } from '@models/traduction';
+import { DateService } from '@services/date.service';
 
 @Component({
   selector: 'app-educations',
@@ -12,7 +13,9 @@ export class EducationsComponent implements OnInit {
   @Input() educations!: Education[];
   @Input() traduction!: Traduction;
 
-  constructor() { }
+  constructor(
+    public dateService: DateService
+  ) { }
 
   ngOnInit(): void {
   }

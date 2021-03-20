@@ -4,7 +4,7 @@ import { Config } from '@models/config';
 import { Resume } from '@models/resume';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import * as YAML from 'yaml';
+import * as YAML from 'js-yaml';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,7 @@ export class DataService {
       responseType: 'text'
     }).pipe(
       map((data: string) => {
-        const yaml = YAML.parse(data);
+        const yaml = YAML.load(data) as any;
         return yaml.config;
       })
     );
@@ -39,7 +39,7 @@ export class DataService {
         responseType: 'text'
       }).pipe(
         map((data: string) => {
-          const yaml = YAML.parse(data);
+          const yaml = YAML.load(data) as any;
           this.db[lang] = yaml;
           return yaml.resume;
         })

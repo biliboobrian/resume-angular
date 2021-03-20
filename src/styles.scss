@@ -16,3 +16,9 @@ html, body {
 button {
     text-decoration: none !important;
 }
+
+@media (min-width: 576px) {
+    .border-sm-none {
+        border: none !important;
+    }
+}

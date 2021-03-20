@@ -3,5 +3,6 @@ config :
   backgroundColor : '#3b3b3b'
   headerColor     : '#292929'
   headerLineColor : '#ff9124'
+  linkColor       : '#ff9124'
   color           : '#ededed'
   langs           : [en, fr]

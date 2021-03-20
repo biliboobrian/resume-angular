@@ -7,7 +7,7 @@ resume :
   educations :
     - name    : my diploma
       place   : My university
-      from    : 2002-12-14
+      from    : !!timestamp 2005-12-14
       to      : 2002-12-15
       address : 10 backer street, london, UK
       desc    : Lorem ipsum dolor
@@ -42,3 +42,4 @@ resume :
     experiences : Experiences
     aboutMe     : About Me
     today       : Today
+    dateFormat  : dd-MM-yyyy

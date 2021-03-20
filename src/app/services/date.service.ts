@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { DateTime } from 'luxon';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class DateService {
 
   constructor() { }
 
-  formatDate(date: Date, lang: string, today: string): string {
-    return (date) ? Intl.DateTimeFormat(lang).format(date) : today;
+  formatDate(date: Date, format: string, today: string): string {
+    return (date) ? DateTime.fromJSDate(date).toFormat(format) : today;
   }
 }

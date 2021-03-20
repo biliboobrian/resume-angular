@@ -3,6 +3,7 @@ export class Traduction {
         public aboutMe: string,
         public experiences: string,
         public educations: string,
-        public today: string
+        public today: string,
+        public dateFormat: string
     ) { }
 }

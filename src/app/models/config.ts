@@ -5,6 +5,7 @@ export class Config {
         public headerColor: string,
         public headerLineColor: string,
         public color: string,
+        public linkColor: string,
         public langs: string[]
     ) {}
 }

@@ -18,6 +18,7 @@ export class ExperiencesComponent implements OnInit {
   
   constructor(
     public dataService: DateService,
+    public dateService: DateService,
     public langService: LangService
   ) { }
 
