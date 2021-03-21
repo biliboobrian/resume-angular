@@ -9,11 +9,23 @@
     </div>
   </div>
 </div>
+
 <div class="container-xxl mt-5 pt-5">
   <app-about-me [general]="resume?.general!" [traduction]="resume?.traduction!" [config]="config"></app-about-me>
   <app-experiences [experiences]="resume?.experiences!" [traduction]="resume?.traduction!" [config]="config"></app-experiences>
   <app-educations [educations]="resume?.educations!" [traduction]="resume?.traduction!"></app-educations>
   <app-misc [misc]="resume?.misc!"></app-misc>
 </div>
-  
+
+<div class="container-fluid">
+  <div class="row border-top bottom-height" 
+    [style.background-color]="config?.headerColor"
+    [style.border-color]="config?.headerLineColor +' !important'">
+    <div class="col-12 pt-2 pt-print-0">
+      <div class="container-xxl">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+</div>  
 

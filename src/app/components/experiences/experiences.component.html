@@ -22,6 +22,6 @@
         <small class="d-sm-none">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} - 
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}</small>
         
-        <p class="m-0 pt-4" innerHtml="{{ experience.desc | convertHtmlTag }}"></p>
+        <p class="m-0 pt-4 text-justify" innerHtml="{{ experience.desc | convertHtmlTag }}"></p>
     </div>
 </div>

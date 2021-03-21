@@ -8,6 +8,7 @@ import { MiscComponent } from './components/misc/misc.component';
 import { GeneralComponent } from './components/general/general.component';
 import { ConvertHtmlTagPipe } from './pipes/convert-html-tag.pipe';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     MiscComponent,
     GeneralComponent,
     ConvertHtmlTagPipe,
-    AboutMeComponent
+    AboutMeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -37,6 +37,10 @@ button, a {
         width: 100%;
     }
 
+    .container-fluid {
+        margin-top: -40px;
+    }
+
     .text-print-start {
         text-align: left !important;
     }
@@ -44,4 +48,9 @@ button, a {
     .page-break {
         break-inside: avoid;
     }
+
+    body {
+        color: #000 !important;
+    }
+
 }

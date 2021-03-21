@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { Config } from '@models/config';
 import { Resume } from '@models/resume';
 import { DataService } from '@services/data.service';
@@ -19,7 +20,8 @@ export class AppComponent implements OnInit {
     public dataService: DataService,
     private elementRef: ElementRef,
     private appService: AppService,
-    private langService: LangService
+    private langService: LangService,
+    private titleService: Title
   ) {
   }
 
@@ -38,6 +40,7 @@ export class AppComponent implements OnInit {
     this.langService.langSbj.subscribe(lang => {
       this.dataService.getResumeData(lang).subscribe((data: Resume) => {
         this.resume = data;
+        this.titleService.setTitle(this.appService.getTitle(this.resume.general));
       });
     })
   }

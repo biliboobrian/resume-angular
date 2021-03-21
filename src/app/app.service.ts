@@ -1,5 +1,6 @@
 import { ElementRef, Injectable } from '@angular/core';
 import { Config } from '@models/config';
+import { General } from '@models/general';
 
 @Injectable({
   providedIn: 'root'
@@ -18,5 +19,9 @@ export class AppService {
     const langIndex = possibleLangs.indexOf(navigatorlang);
 
     return (langIndex !== -1) ? navigatorlang : possibleLangs[0];
+  }
+
+  public getTitle(general: General): string {
+    return general.name + ' - ' + general.title;
   }
 }
