@@ -5,6 +5,7 @@ export class Experience {
         public from: Date,
         public to: Date,
         public address: string,
+        public url: string,
         public desc: string
     ) { }
 }

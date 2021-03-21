@@ -25,14 +25,42 @@ resume :
       from    : 2013-01-01
       to      : 
       address : 136 route de Bettembourg, Fentange, 5811, LU
-      desc    : "Développement d'applications angulaJS et angular Développement d'API en PHP (Laravel / Lumen) Configuration de serveur web sous linux RHEL Intégration, développement et administration de solutions CRM (SugarCRM, Edeal) pour différents clients"
+      url     : https://www.its4u.lu/
+      desc    : |
+                Développement d'applications angulaJS et angular 
+                Développement d'API en PHP (Laravel / Lumen) 
+                Configuration de serveur web sous linux RHEL 
+                Intégration, développement et administration de solutions CRM (SugarCRM, Edeal) pour différents clients
 
-    - name    : my experience 2
-      place   : My company
-      from    : 2004-12-14
-      to      : 2005-12-15
-      address : 10 backer street, london, UK
-      desc    : Lorem ipsum dolor
+    - name    : Analyste développeur & Architecte technique
+      place   : InitBox
+      from    : 2012-04-01
+      to      : 2012-10-31
+      address : Luxembourg
+      url     : 
+      desc    : |
+                En charge de l'architecture et du développement d'une application de gestions pour la société Brunata-Metrona utilisant Adobe AIR/Flex, Java, MSSQL.
+                Création du site web du Fond Belval utilisant du PHP, Html, CSS et une base de données MySQL.
+
+    - name    : Analyste développeur & Architecte technique
+      place   : SynerMesh S.A.
+      from    : 2011-04-01
+      to      : 2012-03-31
+      address : Luxembourg
+      url     : 
+      desc    : |
+                En charge de l'architecture et du développement d'une application de gestions pour la société Brunata-Metrona utilisant Adobe AIR/Flex, Java, MSSQL.
+                Création du site web du Fond Belval utilisant du PHP, Html, CSS et une base de données MySQL.
+
+    - name    : Analyste développeur
+      place   : Intrasoft International
+      from    : 2007-07-01
+      to      : 2012-03-31
+      address : Luxembourg
+      url     : 
+      desc    : |
+                En charge du développement, l'administration et le maintient du portail d'entreprise de la société Intrasoft International écrit en Flex 3.5 BalzeDS, Java et une base de données MSSQL. 
+                Création d’une application de gestion par workflow des directives de vol de EASA (European Aviation Safety Agency) en PHP avec base de données Oracle.
 
   misc :
     hobbies   : ['fitness', 'bike']

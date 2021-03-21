@@ -23,4 +23,8 @@ export class GeneralComponent implements OnInit {
   onChangeLang(lang: string): void {
     this.langService.langSwitch(lang);
   }
+
+  print(event: MouseEvent): void {
+    window.print();
+  }
 }

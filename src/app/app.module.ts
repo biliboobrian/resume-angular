@@ -6,6 +6,8 @@ import { EducationsComponent } from './components/educations/educations.componen
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { MiscComponent } from './components/misc/misc.component';
 import { GeneralComponent } from './components/general/general.component';
+import { ConvertHtmlTagPipe } from './pipes/convert-html-tag.pipe';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { GeneralComponent } from './components/general/general.component';
     EducationsComponent,
     ExperiencesComponent,
     MiscComponent,
-    GeneralComponent
+    GeneralComponent,
+    ConvertHtmlTagPipe,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

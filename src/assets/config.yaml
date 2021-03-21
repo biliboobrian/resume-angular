@@ -5,4 +5,6 @@ config :
   headerLineColor : '#ff9124'
   linkColor       : '#ff9124'
   color           : '#ededed'
+  urlLinkedIn     : 'https://www.linkedin.com/in/pierre-hanauer/'
+  urlGitHub       : 'https://github.com/biliboobrian'
   langs           : [en, fr]

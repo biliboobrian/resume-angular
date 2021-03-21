@@ -1,23 +1,53 @@
 <div class="row">
-    <div class="col-12 text-center text-md-end">
+    <div class="col-12 text-center text-md-end d-print-none">
+        <button *ngFor="let lang of config?.langs!" type="button" class="btn btn-link"
+            [class.active]="langService.isCurrentLang(lang)" (click)="onChangeLang(lang)"
+            [style.color]="config?.linkColor">{{ lang }}</button>
+    </div>
 
-        <button *ngFor="let lang of config?.langs!" 
-        type="button" class="btn btn-link" 
-        [class.active]="langService.isCurrentLang(lang)"
-        (click)="onChangeLang(lang)"
-        [style.color]="config?.linkColor">{{ lang }}</button>
-      </div>
-    <div class="col-12 text-center text-md-start">
-        <h2 class="d-block d-md-none">{{ general?.name }}</h2>
-        <h4 class="d-block d-md-none">{{ general?.title }}</h4>
-        <img src="./assets/photo.jpg" class="photo"/>
-        <div class="d-none d-md-inline-block align-bottom">
-            <div>
-                
+    <div class="col-12 text-center text-md-start text-print-start">
+        <h2 class="d-block d-md-none d-print-none">{{ general?.name }}</h2>
+        <h4 class="d-block d-md-none d-print-none">{{ general?.title }}</h4>
+
+        <div class="d-block d-md-none d-print-none">
+            <a *ngIf="config?.urlLinkedIn" class="btn icon-btn p-0 ms-0 my-0 me-3" [style.color]="config?.linkColor"
+                target="_blank" href="{{ config?.urlLinkedIn! }}">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a *ngIf="config?.urlGitHub" class="btn icon-btn p-0 ms-0 my-0 me-3" [style.color]="config?.linkColor"
+                target="_blank" href="{{ config?.urlGitHub! }}">
+                <i class="bi bi-github"></i>
+            </a>
+
+            <button type="button" class="btn icon-btn p-0 ms-0 my-0 me-3" [style.color]="config?.linkColor"
+                target="_blank" (click)="print($event)">
+                <i class="bi bi-printer-fill"></i>
+            </button>
+        </div>
+
+        <img src="./assets/photo.jpg" class="photo" />
+
+        <div class="d-none d-md-inline-block align-bottom d-print-inline-block">
+            <div class="ps-3 ps-3 d-print-none">
+                <a *ngIf="config?.urlLinkedIn" class="btn icon-btn p-0 ms-0 my-0 me-3" [style.color]="config?.linkColor"
+                    target="_blank" href="{{ config?.urlLinkedIn! }}">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a *ngIf="config?.urlGitHub" class="btn icon-btn p-0 ms-0 my-0 me-3" [style.color]="config?.linkColor"
+                    target="_blank" href="{{ config?.urlGitHub! }}">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <button type="button" class="btn icon-btn p-0 ms-0 my-0 me-3" [style.color]="config?.linkColor"
+                    target="_blank" (click)="print($event)">
+                    <i class="bi bi-printer-fill"></i>
+                </button>
             </div>
+
             <h1 class="ps-3">{{ general?.name }}</h1>
             <h3 class="ps-3">{{ general?.title }}</h3>
         </div>
-        
     </div>
 </div>

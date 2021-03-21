@@ -6,6 +6,9 @@ export class Config {
         public headerLineColor: string,
         public color: string,
         public linkColor: string,
-        public langs: string[]
+        public langs: string[],
+        public urlLinkedIn: string,
+        public urlGitHub: string,
+        
     ) {}
 }

@@ -1,25 +1,27 @@
-<div class="row justify-content-md-end">
-    <div class="col-12 col-md-10 pb-4">
+<div class="row justify-content-sm-end">
+    <div class="col-12 col-sm-9 col-md-10 pb-4">
         <h2>{{ traduction?.experiences }}</h2>
     </div>
 </div>
-<div class="row" *ngFor="let experience of experiences">
-    <div class="d-none d-sm-block col-3 col-md-2 border-end text-end pb-3">
+<div class="row page-break" *ngFor="let experience of experiences">
+    <div class="d-none d-sm-block col-3 col-md-2 border-end pt-4 pb-4 text-end">
         <div class="position-relative h-100 pt-1">
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}
             <div class="position-absolute fixed-bottom">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} </div>
         </div>
     </div>
-    <div class="col-12 col-sm-9 col-md-10 pb-3 border-top pt-3 pt-sm-0 border-sm-none">
+    <div class="col-12 col-sm-9 col-md-10 border-top border-sm-none pt-4 pb-4">
         <h4>{{ experience.name }}</h4>
-        <button type="button" class="btn btn-link px-0"
+        <a *ngIf="experience.url" class="btn btn-link px-0" target="_blank"
+            href="{{ experience.url }}"
             [style.color]="config?.linkColor">
             <h5 class="mb-0">{{ experience.place }}</h5>
-        </button>
+        </a>
+        <h5 *ngIf="!experience.url" class="mb-1 mt-3" [style.color]="config?.linkColor">{{ experience.place }}</h5>
         <h6 class="mb-0">{{ experience.address }}</h6>
         <small class="d-sm-none">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} - 
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}</small>
         
-        <p class="m-0 pt-4 pt-md-0">{{ experience.desc }}</p>
+        <p class="m-0 pt-4" innerHtml="{{ experience.desc | convertHtmlTag }}"></p>
     </div>
 </div>

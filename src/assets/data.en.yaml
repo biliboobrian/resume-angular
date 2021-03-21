@@ -25,6 +25,7 @@ resume :
       from    : 2004-12-14
       to      : 2005-12-15
       address : 10 backer street, london, UK
+      url     : http://www.google.com
       desc    : Lorem ipsum dolor
 
     - name    : my experience 2
@@ -32,6 +33,7 @@ resume :
       from    : 2004-12-14
       to      : 2005-12-15
       address : 10 backer street, london, UK
+      url     : http://www.google.com
       desc    : Lorem ipsum dolor
 
   misc :

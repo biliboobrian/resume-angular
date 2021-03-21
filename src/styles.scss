@@ -13,12 +13,35 @@ html, body {
     min-height: 100%;
 }
 
-button {
+button, a {
     text-decoration: none !important;
 }
 
 @media (min-width: 576px) {
     .border-sm-none {
         border: none !important;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;   /* auto is the initial value */
+        margin: 10px;  /* this affects the margin in the printer settings */
+    }
+
+    .pt-print-0 {
+        padding-top: 0px !important;
+    }
+
+    .container-xxl {
+        width: 100%;
+    }
+
+    .text-print-start {
+        text-align: left !important;
+    }
+
+    .page-break {
+        break-inside: avoid;
     }
 }
