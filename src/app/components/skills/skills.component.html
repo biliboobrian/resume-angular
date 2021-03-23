@@ -1,0 +1,16 @@
+<div class="row justify-content-end">
+    <div class="col-12 text-right">
+        <h4>{{ traduction?.skills }}</h4>
+    </div>
+</div>
+<div class="row justify-content-center page-break" *ngFor="let skill of skills">
+    <div class="col-12 pb-12">
+        {{ skill.name }}<br/>
+        <div class="progress">
+            <div class="progress-bar w-75" [style.background-color]="config?.linkColor" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <small>{{ skill.note }}</small>
+
+
+    </div>
+</div>

@@ -1,16 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Config } from '@models/config';
-import { Misc } from '@models/misc';
+import { Skill } from '@models/skill';
 import { Traduction } from '@models/traduction';
 
 @Component({
-  selector: 'app-misc',
-  templateUrl: './misc.component.html',
-  styleUrls: ['./misc.component.scss']
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss']
 })
-export class MiscComponent implements OnInit {
+export class SkillsComponent implements OnInit {
 
-  @Input() misc!: Misc;
+  @Input() skills!: Skill[];
   @Input() traduction!: Traduction;
   @Input() config!: Config;
 

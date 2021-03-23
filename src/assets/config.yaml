@@ -7,4 +7,5 @@ config :
   color           : '#ededed'
   urlLinkedIn     : 'https://www.linkedin.com/in/pierre-hanauer/'
   urlGitHub       : 'https://github.com/biliboobrian'
+  urlTwitter      : 
   langs           : [en, fr]

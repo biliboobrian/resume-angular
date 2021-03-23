@@ -9,6 +9,7 @@ export class Config {
         public langs: string[],
         public urlLinkedIn: string,
         public urlGitHub: string,
+        public urlTwitter: string
         
     ) {}
 }

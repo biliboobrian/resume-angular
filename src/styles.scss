@@ -11,6 +11,7 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    font-size: 14px;
 }
 
 button, a {
@@ -26,7 +27,7 @@ button, a {
 @media print {
     @page {
         size: A4;   /* auto is the initial value */
-        margin: 10px;  /* this affects the margin in the printer settings */
+        margin: 30px 10px 10px 10px;  /* this affects the margin in the printer settings */
     }
 
     .pt-print-0 {
@@ -38,7 +39,7 @@ button, a {
     }
 
     .container-fluid {
-        margin-top: -40px;
+        margin-top: -60px;
     }
 
     .text-print-start {

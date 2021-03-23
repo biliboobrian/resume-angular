@@ -12,26 +12,35 @@ import * as YAML from 'js-yaml';
 export class DataService {
 
   private db: any = {};
+  private config!: Config;
 
   constructor(
     public httpClient: HttpClient
   ) { }
 
   getConfig(): Observable<Config> {
+    if(this.config) {
+      return new Observable<Config>(subscriber => {
+        subscriber.next(this.config);
+        subscriber.complete();
+      })
+    } else {
     return this.httpClient.get('assets/config.yaml', {
       responseType: 'text'
     }).pipe(
       map((data: string) => {
         const yaml = YAML.load(data) as any;
+        this.config = yaml.config;
         return yaml.config;
       })
     );
+    }
   }
 
   getResumeData(lang: string): Observable<Resume> {
     if(this.db[lang]) {
       return new Observable<Resume>(subscriber => {
-        subscriber.next(this.db[lang].resume);
+        subscriber.next(this.db[lang]);
         subscriber.complete();
       })
     } else {
@@ -40,7 +49,7 @@ export class DataService {
       }).pipe(
         map((data: string) => {
           const yaml = YAML.load(data) as any;
-          this.db[lang] = yaml;
+          this.db[lang] = yaml.resume;
           return yaml.resume;
         })
       );

@@ -61,13 +61,58 @@ resume :
       desc    : |
                 En charge du développement, l'administration et le maintient du portail d'entreprise de la société Intrasoft International écrit en Flex 3.5 BalzeDS, Java et une base de données MSSQL. 
                 Création d’une application de gestion par workflow des directives de vol de EASA (European Aviation Safety Agency) en PHP avec base de données Oracle.
+  skills    : 
+    - name  : Typescript / Javascript
+      grade : 5
+      subSkill  :
+        - name  : Angular
+          grade : 5
+          note  : Framework utilisé en continu depuis plusieurs années
+    
+        - name  : React
+          grade : 3
+          note  : Bibliothèque utilisée sur quelques projets
+
+        - name  : BackBoneJS
+          grade : 3
+          note  : Utilisé avec SugarCRM
+
+    - name  : PHP
+      grade : 5
+      subSkill  :
+        - name  : Lumen
+          grade : 5
+                  
+        - name  : Laravel
+          grade : 4
+
+        - name  : SugarCRM
+          grade : 4  
+          note  : Certifié SugarCRM Developer en 2017 
+
+        - name  : Symphony
+          grade : 3
+
+        - name  : Phalcon
+          grade : 3
+
+    - name  : MySQL / MariaDB
+      grade : 4
+            
+    - name  : MySQL / MariaDB
+      grade : 4
+
+
 
   misc :
-    hobbies   : ['fitness', 'bike']
+    hobbies   : 'fitness, running'
 
   traduction : 
-    educations  : Educations
-    experiences : Experiences
-    aboutMe     : A propos
+    educations  : Formation
+    experiences : Expériences
+    skills      : Compétences
+    languages   : Langues
+    hobbies     : Loisirs
+    aboutMe     : À propos
     today       : Aujourd'hui
     dateFormat  : dd/MM/yyyy

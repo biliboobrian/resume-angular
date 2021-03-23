@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row border-bottom" 
+        [style.background-color]="config?.headerColor"
+        [style.border-color]="config?.headerLineColor +' !important'">
+        <div class="col-12 pt-2 pt-print-0">
+        <div class="container-xxl">
+            <app-general [general]="resume?.general!" [config]="config"></app-general>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-xxl mt-5 pt-5">
+        <div class="row">
+            <div class="col-2">
+                <app-skills [skills]="resume?.skills!" [traduction]="resume?.traduction!" [config]="config"></app-skills>
+            </div>
+            <div class="col-10">
+                <app-about-me [general]="resume?.general!" [traduction]="resume?.traduction!" [config]="config"></app-about-me>
+                <app-experiences [experiences]="resume?.experiences!" [traduction]="resume?.traduction!" [config]="config"></app-experiences>
+                <app-educations [educations]="resume?.educations!" [traduction]="resume?.traduction!"></app-educations>
+                <app-misc [misc]="resume?.misc!" [traduction]="resume?.traduction!" [config]="config"></app-misc>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 d-print-none">
+    <div class="row border-top bottom-height" 
+        [style.background-color]="config?.headerColor"
+        [style.border-color]="config?.headerLineColor +' !important'">
+        <div class="col-12 pt-2 pt-print-0">
+        <div class="container-xxl">
+            <app-footer></app-footer>
+        </div>
+        </div>
+    </div>
+</div>  
+
+  

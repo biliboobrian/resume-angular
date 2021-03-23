@@ -36,12 +36,23 @@ resume :
       url     : http://www.google.com
       desc    : Lorem ipsum dolor
 
+  skills :
+    - name  : Skill 1
+      grade : 5
+      subSkill  :
+        - name  : Sub skill 1
+          grade : 5
+          note  : Some description
+    
   misc :
     hobbies   : ['fitness', 'bike']
 
   traduction : 
     educations  : Educations
     experiences : Experiences
+    skills      : Skills
+    languages   : Languages
+    hobbies     : Hobbies
     aboutMe     : About Me
     today       : Today
     dateFormat  : dd-MM-yyyy
