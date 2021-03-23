@@ -67,15 +67,12 @@ resume :
       subSkill  :
         - name  : Angular
           grade : 5
-          note  : Framework utilisé en continu depuis plusieurs années
-    
+
         - name  : React
           grade : 3
-          note  : Bibliothèque utilisée sur quelques projets
 
         - name  : BackBoneJS
           grade : 3
-          note  : Utilisé avec SugarCRM
 
     - name  : PHP
       grade : 5
@@ -87,8 +84,7 @@ resume :
           grade : 4
 
         - name  : SugarCRM
-          grade : 4  
-          note  : Certifié SugarCRM Developer en 2017 
+          grade : 4 
 
         - name  : Symphony
           grade : 3
@@ -102,7 +98,18 @@ resume :
     - name  : MySQL / MariaDB
       grade : 4
 
+  languages :
+    - name    : Français
+      written : 5
+      spoken  : 5
+    
+    - name    : Anglais
+      written : 4
+      spoken  : 4
 
+    - name    : Allemand
+      written : 1
+      spoken  : 1
 
   misc :
     hobbies   : 'fitness, running'
@@ -114,5 +121,6 @@ resume :
     languages   : Langues
     hobbies     : Loisirs
     aboutMe     : À propos
+    misc        : Intérets
     today       : Aujourd'hui
     dateFormat  : dd/MM/yyyy

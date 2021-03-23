@@ -4,8 +4,10 @@ export class Traduction {
         public experiences: string,
         public educations: string,
         public skills: string,
+        public languages: string,
         public today: string,
         public dateFormat: string,
-        public misc: string
+        public misc: string,
+        public hobbies: string
     ) { }
 }

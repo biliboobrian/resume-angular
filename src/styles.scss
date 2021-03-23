@@ -34,7 +34,7 @@ button, a {
         padding-top: 0px !important;
     }
 
-    .container-xxl {
+    .container {
         width: 100%;
     }
 
@@ -52,6 +52,47 @@ button, a {
 
     body {
         color: #000 !important;
+    }
+
+    .col-print-1, .col-print-2, .col-print-3, .col-print-4, .col-print-5, .col-print-6, .col-print-7, .col-print-8, .col-print-9, .col-print-10, .col-print-11, .col-print-12 {
+        flex: 0 0 auto;
+    }
+
+    .col-print-12 {
+        width: 100%;
+    }
+    .col-print-11 {
+    width: 91.66666667%;
+    }
+    .col-print-10 {
+    width: 83.33333333%;
+    }
+    .col-print-9 {
+    width: 75%;
+    }
+    .col-print-8 {
+    width: 66.66666667%;
+    }
+    .col-print-7 {
+    width: 58.33333333%;
+    }
+    .col-print-6 {
+    width: 50%;
+    }
+    .col-print-5 {
+    width: 41.66666667%;
+    }
+    .col-print-4 {
+    width: 33.33333333%;
+    }
+    .col-print-3 {
+    width: 25%;
+    }
+    .col-print-2 {
+    width: 16.66666667%;
+    }
+    .col-print-1 {
+    width: 8.33333333%;
     }
 
 }

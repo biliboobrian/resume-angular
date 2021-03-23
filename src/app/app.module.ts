@@ -14,6 +14,8 @@ import { GeneralComponent } from './components/general/general.component';
 import { MiscComponent } from './components/misc/misc.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ConvertHtmlTagPipe } from './pipes/convert-html-tag.pipe';
+import { LanguagesComponent } from './components/languages/languages.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ConvertHtmlTagPipe } from './pipes/convert-html-tag.pipe';
     AboutMeComponent,
     FooterComponent,
     CvComponent,
-    SkillsComponent
+    SkillsComponent,
+    LanguagesComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

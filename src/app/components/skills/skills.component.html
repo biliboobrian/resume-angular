@@ -1,16 +1,18 @@
-<div class="row justify-content-end">
-    <div class="col-12 text-right">
-        <h4>{{ traduction?.skills }}</h4>
+<div class="row">
+    <div class="col-12 pb-4">
+        <h3>{{ traduction?.skills }}</h3>
     </div>
 </div>
 <div class="row justify-content-center page-break" *ngFor="let skill of skills">
-    <div class="col-12 pb-12">
+    <div class="col-12 pb-4">
         {{ skill.name }}<br/>
-        <div class="progress">
-            <div class="progress-bar w-75" [style.background-color]="config?.linkColor" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        <app-rating [rate]="skill.grade" [config]="config"></app-rating>
+        <div *ngFor="let subSkill of skill.subSkill" class="row border-start ms-2">
+            <div class="col-12 ps-3">
+                {{ subSkill.name }}<br/>
+                <app-rating [rate]="subSkill.grade" [config]="config"></app-rating><br/>
+            </div>
         </div>
-        <small>{{ skill.note }}</small>
-
 
     </div>
 </div>
