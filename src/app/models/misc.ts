@@ -1,6 +1,7 @@
 
 export class Misc {
     constructor(
-        public hobbies: string
+        public hobbies: string,
+        public licence: string
     ) {}
 }

@@ -8,6 +8,9 @@ export class Traduction {
         public today: string,
         public dateFormat: string,
         public misc: string,
-        public hobbies: string
+        public hobbies: string,
+        public licence: string,
+        public spoken: string,
+        public written: string
     ) { }
 }

@@ -1,5 +1,22 @@
-<div class="row justify-content-sm-end">
-    <div class="col-12 text-end">
-        <h4>{{ traduction?.languages }}</h4>
+<div class="row">
+    <div class="col-12 pb-4">
+        <h3>{{ traduction?.languages }}</h3>
+    </div>
+</div>
+<div class="row justify-content-center page-break" *ngFor="let language of languages">
+    <div class="col-12 pb-4">
+        {{ language.name }}<br/>
+        <div class="row border-start ms-2">
+            <div class="col-12 ps-3">
+                {{ traduction?.spoken }}<br/>
+                <app-rating [rate]="language.spoken" [config]="config"></app-rating><br/>
+            </div>
+        </div>
+        <div class="row border-start ms-2">
+            <div class="col-12 ps-3">
+                {{ traduction?.written }}<br/>
+                <app-rating [rate]="language.written" [config]="config"></app-rating><br/>
+            </div>
+        </div>
     </div>
 </div>

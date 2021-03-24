@@ -6,6 +6,7 @@ export class Experience {
         public to: Date,
         public address: string,
         public url: string,
-        public desc: string
+        public desc: string,
+        public skills: string
     ) { }
 }

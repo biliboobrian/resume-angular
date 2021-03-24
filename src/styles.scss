@@ -27,7 +27,7 @@ button, a {
 @media print {
     @page {
         size: A4;   /* auto is the initial value */
-        margin: 30px 10px 10px 10px;  /* this affects the margin in the printer settings */
+        margin: 30px 0px 0px 0px;  /* this affects the margin in the printer settings */
     }
 
     .pt-print-0 {
@@ -61,38 +61,57 @@ button, a {
     .col-print-12 {
         width: 100%;
     }
+
     .col-print-11 {
     width: 91.66666667%;
     }
+
     .col-print-10 {
     width: 83.33333333%;
     }
+
     .col-print-9 {
     width: 75%;
     }
+
     .col-print-8 {
     width: 66.66666667%;
     }
+
     .col-print-7 {
     width: 58.33333333%;
     }
+
     .col-print-6 {
     width: 50%;
     }
+
     .col-print-5 {
     width: 41.66666667%;
     }
+
     .col-print-4 {
     width: 33.33333333%;
     }
+
     .col-print-3 {
     width: 25%;
     }
+
     .col-print-2 {
     width: 16.66666667%;
     }
+
     .col-print-1 {
     width: 8.33333333%;
+    }
+
+    .order-print-1 {
+        order: 1!important;
+    }
+
+    .order-print-2 {
+        order: 2!important;
     }
 
 }
