@@ -6,8 +6,8 @@
 <div class="row page-break" *ngFor="let education of educations">
     <div class="d-none d-sm-block col-3 col-md-2 col-print-2 border-end pt-4 pb-4 text-end">
         <div class="position-relative h-100 pt-1">
-            {{ dateService.formatDate(education.to, traduction?.dateFormat!, traduction?.today!) }}
-            <div class="position-absolute fixed-bottom">{{ dateService.formatDate(education.from, traduction?.dateFormat!, traduction?.today!) }} </div>
+            {{ (education.to) ? education.to : traduction?.today! }}
+            <div class="position-absolute fixed-bottom">{{ education.from }} </div>
         </div>
     </div>
     <div class="col-12 col-sm-9 col-md-10 col-print-10 border-top border-sm-none pt-4 pb-4">
@@ -20,8 +20,8 @@
             </a>
         </h5>
         <h6 class="mb-0">{{ education.address }}</h6>
-        <small class="d-sm-none">{{ dateService.formatDate(education.to, traduction?.dateFormat!, traduction?.today!) }} - 
-            {{ dateService.formatDate(education.from, traduction?.dateFormat!, traduction?.today!) }}</small>
+        <small class="d-sm-none">{{ (education.to) ? education.to : traduction?.today! }} - 
+            {{ education.from }}</small>
 
         <p class="m-0 pt-4 text-justify" innerHtml="{{ education.desc | convertHtmlTag }}"></p>
     </div>

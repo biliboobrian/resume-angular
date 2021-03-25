@@ -6,6 +6,6 @@ config :
   linkColor       : '#ff9124'
   color           : '#ededed'
   urlLinkedIn     : 'https://www.linkedin.com/in/pierre-hanauer/'
-  urlGitHub       : 'https://github.com/biliboobrian'
+  urlGitHub       : 'https://github.com/biliboobrian/resume-angular'
   urlTwitter      : 
   langs           : [en]
