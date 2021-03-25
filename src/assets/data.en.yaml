@@ -7,8 +7,8 @@ resume :
   educations :
     - name    : my diploma
       place   : My university
-      from    : 2005-12-14
-      to      : 2005-12-15
+      from    : 2004
+      to      : 2005
       address : 10 backer street, london, UK
       url     : 
       desc    : |
@@ -17,8 +17,8 @@ resume :
     
     - name    : my diploma 2
       place   : My university 2
-      from    : 2002-01-14
-      to      : 2002-03-15
+      from    : 2001
+      to      : 2002
       address : 11 backer street, london, UK
       url     : https://github.com/biliboobrian/resume-angular
       desc    : |
@@ -32,6 +32,7 @@ resume :
       to      : 
       address : 10 backer street, london, UK
       url     : 
+      skills  : skill 1, skill 3, skill 4
       desc    : |
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud
@@ -42,6 +43,7 @@ resume :
       to      : 2005-12-15
       address : 10 backer street, london, UK
       url     : https://github.com/biliboobrian/resume-angular
+      skills  : skill 1, skill 3, skill 4
       desc    : |
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud
@@ -52,6 +54,7 @@ resume :
       to      : 2005-12-15
       address : 10 backer street, london, UK
       url     : https://github.com/biliboobrian/resume-angular
+      skills  : skill 1, skill 3, skill 4
       desc    : |
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud
