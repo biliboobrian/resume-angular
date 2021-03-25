@@ -1,27 +1,27 @@
 # ResumeAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+This project create a ready to use CV template, all media compatible, with YAML configuration and printing facilities written in Angular 11+.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Install NodeJS / NPM.
+- Clone repository.
+- Run `npm i` to install dependencies.
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Modify `src/assets/config.yaml` and `src/assets/data.en.yaml` to change the CV.
 
-## Code scaffolding
+## Add language
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Make a copy `src/assets/data.en.yaml` in the same folder.
+- rename the file changing the country code with the one you want, ex: for french rename in `data.fr.yaml`.
+- Edit `src/assets/config.yaml` and change the `langs` and add the new language to the array, ex: for french represented by `data.en.yaml` > you should add `fr`
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Publish your CV on github pages
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Follow the steps on https://pages.github.com/ to create the repository.
+- Build the project with `--prod` flag.
+- Copy `dist/` to your created repository and push the files.

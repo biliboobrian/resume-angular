@@ -7,26 +7,34 @@ resume :
   educations :
     - name    : my diploma
       place   : My university
-      from    : !!timestamp 2005-12-14
-      to      : 2002-12-15
+      from    : 2005-12-14
+      to      : 2005-12-15
       address : 10 backer street, london, UK
-      desc    : Lorem ipsum dolor
+      url     : 
+      desc    : |
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud
     
     - name    : my diploma 2
       place   : My university 2
       from    : 2002-01-14
       to      : 2002-03-15
       address : 11 backer street, london, UK
-      desc    : Lorem ipsum dolor
+      url     : http://www.google.com
+      desc    : |
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud
 
   experiences :
     - name    : my experience
       place   : My company
       from    : 2004-12-14
-      to      : 2005-12-15
+      to      : 
       address : 10 backer street, london, UK
-      url     : http://www.google.com
-      desc    : Lorem ipsum dolor
+      url     : 
+      desc    : |
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud
 
     - name    : my experience 2
       place   : My company
@@ -34,7 +42,19 @@ resume :
       to      : 2005-12-15
       address : 10 backer street, london, UK
       url     : http://www.google.com
-      desc    : Lorem ipsum dolor
+      desc    : |
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud
+
+    - name    : my experience 3
+      place   : My company
+      from    : 2004-12-14
+      to      : 2005-12-15
+      address : 10 backer street, london, UK
+      url     : http://www.google.com
+      desc    : |
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud
 
   skills :
     - name  : Skill 1
@@ -42,17 +62,49 @@ resume :
       subSkill  :
         - name  : Sub skill 1
           grade : 5
-          note  : Some description
+
+    - name  : Skill 2
+      grade : 4
+      subSkill  :
+        - name  : Sub skill 1
+          grade : 5
+
+        - name  : Sub skill 2
+          grade : 5
+
+    - name  : Skill 3
+      grade : 5
     
+    - name  : Skill 4
+      grade : 5
+
+  languages :
+    - name    : English
+      written : 5
+      spoken  : 5
+    
+    - name    : Spanish
+      written : 3
+      spoken  : 4
+
+    - name    : French
+      written : 1
+      spoken  : 3
+
   misc :
-    hobbies   : ['fitness', 'bike']
+    hobbies   : 'fitness, running'
+    licence   : 'B'
 
   traduction : 
-    educations  : Educations
+    aboutMe     : About me
     experiences : Experiences
+    educations  : Education
     skills      : Skills
     languages   : Languages
+    misc        : Others
     hobbies     : Hobbies
-    aboutMe     : About Me
+    licence     : Licence
     today       : Today
+    spoken      : Spoken
+    written     : Written
     dateFormat  : dd-MM-yyyy
