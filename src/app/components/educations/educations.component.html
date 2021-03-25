@@ -1,21 +1,28 @@
-<div class="row justify-content-md-end mt-5">
-    <div class="col-12 col-md-10 pb-4">
+<div class="row justify-content-end pt-4" *ngIf="educations">
+    <div class="col-12 col-md-10 col-print-10 pb-4 text-center text-md-start text-print-start">
         <h2>{{ traduction?.educations }}</h2>
     </div>
 </div>
-<div class="row" *ngFor="let education of educations">
-    <div class="d-none d-sm-block col-3 col-md-2 border-end text-end pb-3">
+<div class="row page-break" *ngFor="let education of educations">
+    <div class="d-none d-sm-block col-3 col-md-2 col-print-2 border-end pt-4 pb-4 text-end">
         <div class="position-relative h-100 pt-1">
             {{ dateService.formatDate(education.to, traduction?.dateFormat!, traduction?.today!) }}
             <div class="position-absolute fixed-bottom">{{ dateService.formatDate(education.from, traduction?.dateFormat!, traduction?.today!) }} </div>
         </div>
     </div>
-    <div class="col-12 col-sm-9 col-md-10 pb-3">
+    <div class="col-12 col-sm-9 col-md-10 col-print-10 border-top border-sm-none pt-4 pb-4">
         <h4>{{ education.name }}</h4>
+        
+        <h5 class="mb-1 mt-3" [style.color]="config?.linkColor">{{ education.place }}
+            <a *ngIf="education.url" class="btn btn-link px-0" target="_blank"
+                href="{{ education.url }}"  [style.color]="config?.linkColor">
+                <i class="bi bi-link-45deg"></i>
+            </a>
+        </h5>
+        <h6 class="mb-0">{{ education.address }}</h6>
         <small class="d-sm-none">{{ dateService.formatDate(education.to, traduction?.dateFormat!, traduction?.today!) }} - 
             {{ dateService.formatDate(education.from, traduction?.dateFormat!, traduction?.today!) }}</small>
-        <h5>{{ education.place }}<h6>{{ education.address }}</h6></h5>
-        
-        <p class="m-0">{{ education.desc }}</p>
+
+        <p class="m-0 pt-4 text-justify" innerHtml="{{ education.desc | convertHtmlTag }}"></p>
     </div>
 </div>

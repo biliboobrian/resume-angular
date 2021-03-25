@@ -1,10 +1,10 @@
 <div class="row">
-    <div class="col-12 pb-4">
+    <div class="col-12 pb-4 text-center text-md-start text-print-start">
         <h3>{{ traduction?.skills }}</h3>
     </div>
 </div>
 <div class="row justify-content-center page-break" *ngFor="let skill of skills">
-    <div class="col-12 pb-4">
+    <div class="col-10 col-sm-8 col-md-12 col-print-12 pb-4">
         {{ skill.name }}<br/>
         <app-rating [rate]="skill.grade" [config]="config"></app-rating>
         <div *ngFor="let subSkill of skill.subSkill" class="row border-start ms-2">

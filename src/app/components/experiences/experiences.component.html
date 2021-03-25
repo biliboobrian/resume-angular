@@ -1,4 +1,4 @@
-<div class="row justify-content-end" *ngIf="experiences">
+<div class="row justify-content-end pt-4" *ngIf="experiences">
     <div class="col-12 col-md-10 col-print-10 pb-4 text-center text-md-start text-print-start">
         <h2>{{ traduction?.experiences }}</h2>
     </div>
@@ -14,10 +14,11 @@
         <h4>{{ experience.name }}</h4>
         
         <h5 class="mb-1 mt-3" [style.color]="config?.linkColor">{{ experience.place }}
-        <a *ngIf="experience.url" class="btn btn-link px-0" target="_blank"
-            href="{{ experience.url }}"  [style.color]="config?.linkColor">
-            <i class="bi bi-link-45deg"></i>
-        </a></h5>
+            <a *ngIf="experience.url" class="btn btn-link px-0" target="_blank"
+                href="{{ experience.url }}"  [style.color]="config?.linkColor">
+                <i class="bi bi-link-45deg"></i>
+            </a>
+        </h5>
         <h6 class="mb-0">{{ experience.address }}</h6>
         <small class="d-sm-none">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} - 
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}</small>
