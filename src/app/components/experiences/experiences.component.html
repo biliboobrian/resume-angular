@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="row page-break" *ngFor="let experience of experiences">
-    <div class="d-none d-sm-block col-3 col-md-2 col-print-2 border-end pt-4 pb-4 text-end">
+    <div class="d-none d-sm-block col-3 col-md-2 col-print-2 border-end pt-4 pb-4 ps-0 text-end">
         <div class="position-relative h-100 pt-1">
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}
             <div class="position-absolute fixed-bottom">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} </div>

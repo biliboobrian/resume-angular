@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('assets/fonts/Roboto-Thin.ttf') format("opentype");
+    font-family: 'customFont';
+    src: url('assets/fonts/Roboto-Light.ttf') format("opentype");
 }
 
 
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'customFont', sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100%;
