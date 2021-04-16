@@ -1,26 +1,26 @@
 <div class="row justify-content-end pt-4" *ngIf="experiences">
-    <div class="col-12 col-md-10 col-print-10 pb-4 text-center text-md-start text-print-start">
+    <div class="col-12 col-md-10 col-print-12 pb-2 text-center text-md-start text-print-start">
         <h2>{{ traduction?.experiences }}</h2>
     </div>
 </div>
 <div class="row page-break" *ngFor="let experience of experiences">
-    <div class="d-none d-sm-block col-3 col-md-2 col-print-2 border-end pt-4 pb-4 ps-0 text-end">
+    <div class="d-none d-print-none d-sm-block col-3 col-md-2 border-end py-2 ps-0 text-end">
         <div class="position-relative h-100 pt-1">
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}
             <div class="position-absolute fixed-bottom">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} </div>
         </div>
     </div>
-    <div class="col-12 col-sm-9 col-md-10 col-print-10 border-top border-sm-none pt-4 pb-4">
+    <div class="col-12 col-sm-9 col-md-10 col-print-12 border-top border-sm-none border-print-top py-2">
         <h4>{{ experience.name }}</h4>
         
         <h5 class="mb-1 mt-3" [style.color]="config?.linkColor">{{ experience.place }}
             <a *ngIf="experience.url" class="btn btn-link px-0" target="_blank"
-                href="{{ experience.url }}"  [style.color]="config?.linkColor">
+                href="{{ experience.url }}" [style.color]="config?.linkColor">
                 <i class="bi bi-link-45deg"></i>
             </a>
         </h5>
         <h6 class="mb-0">{{ experience.address }}</h6>
-        <small class="d-sm-none">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} - 
+        <small class="d-sm-none d-print-block">{{ dateService.formatDate(experience.from, traduction?.dateFormat!, traduction?.today!) }} - 
             {{ dateService.formatDate(experience.to, traduction?.dateFormat!, traduction?.today!) }}</small>
         
         <p class="m-0 pt-4 text-justify" innerHtml="{{ experience.desc | convertHtmlTag }}"></p>

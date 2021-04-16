@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12 text-center text-md-end d-print-none px-0">
-        <a *ngFor="let lang of config?.langs!" type="button" class="btn btn-link"
+        <a *ngFor="let lang of config?.langs!" class="btn btn-link"
         [routerLink]="['/', lang]" [class.active]="langService.isCurrentLang(lang)"
         [style.color]="config?.linkColor">{{ lang }}</a>
     </div>

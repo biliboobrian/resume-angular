@@ -27,7 +27,8 @@ button, a {
 @media print {
     @page {
         size: A4;   /* auto is the initial value */
-        margin: 30px 0px 0px 0px;  /* this affects the margin in the printer settings */
+        margin: 15px;  /* this affects the margin in the printer settings */
+        marks: none;
     }
 
     .pt-print-0 {
@@ -116,6 +117,18 @@ button, a {
 
     .order-print-2 {
         order: 2!important;
+    }
+
+    .d-print-none {
+        display: none !important;
+    }
+
+    .d-print-block {
+        display: block !important;
+    }
+
+    .border-print-top {
+        border-top: 1px solid #dee2e6!important;
     }
 
 }
